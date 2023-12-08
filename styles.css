@@ -30,180 +30,58 @@
     opacity: 0.8;
 }
 
-header {
-    /* margin-left: 250px; */
-    padding: 20px;
-}
 
-/* .myLinks {
+
+.myLinks {
     display: none;
-} */
-
-/* Add styles for the container */
-.container {
-    display: flex;
 }
 
-/* Style for side navigation */
-.side-nav {
-    width: 250px; /* Adjust the width as needed */
-    background-color: rgb(0, 67, 139);
-    color: #fff;
-    padding-top: 20px;
+nav {
+    background: rgb(0, 67, 139);
+    margin: 0;
     position: fixed;
-    height: 100%; /* Full height */
-    overflow-x: hidden;
-}
-
-/*nav { /* from chatgpt */
-    /* display: flex; */
-    /* flex-direction: column; Make the navigation links stack vertically by default */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* background-color: rgb(0, 67, 139); */
-/* } */
-
-/* Style for navigation links in side navigation */
-.side-nav a {
-    display: block;
-    padding: 15px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.side-nav a:hover {
-    background-color: #555;
 }
 
 nav a {
-    display: none; /* Hide by default on larger screens */
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: white solid 1px; */
+    padding: 10px;
+    color: white;
+    text-decoration: none;
 }
 
-/* Style for hamburger menu icon */
-.hamburger-menu {
-    display: none; /* Hide by default on larger screens */
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 1;
-}
-
-/* nav a:hover {
+nav a:hover {
     background-color: #555;
-}
-
-nav.responsive {
-    flex-direction: row; /* Switch to horizontal layout for larger screens */
-/* } */
-
-/* nav.responsive a { */
-    /* margin-right: 15px; Adjust spacing between horizontal navigation links */
-/* } */ 
-
-/* .mobile-container {
-    max-width: 480px;
-    margin: 0 auto;
+}    
+/* nav :nth-child(1) {
+    border-top: white solid 1px;
 } */
 
-#myLinks {
-    display: none;
-} 
+body {
+    margin: 0;
+    padding: 0;
+}
 
 nav a.icon {
     background: rgb(0, 67, 139);
     display: block;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     color: white;
-    padding: 14px 16px;
+    padding: 9px 16px;
     text-decoration: none;
     font-size: 17px;
-    cursor: pointer; /* added this line */
 }
 
-.icon {
-    display: none;
-    cursor: pointer;
-}
-
-/* @media only screen and (max-width: 600px) {
-    nav {
-        flex-direction: row; /* Switch to horizontal layout for larger screens 
-    }
-
-    nav a {
-        margin-right: 15px; /* Adjust spacing between horizontal navigation links 
-    }
-
-    nav a:not(:first-child) {
-        display: none;
-    }
-
-    nav a.icon {
-        float: right;
-        display: block;
-    }
-
-    nav.responsive a {
-        display: block;
-        float: none;
-        text-align: left;
-    }
-
-    nav.responsive {
-        position: relative;
-    }
-
-    nav.responsive #myLinks {
-        display: block;
-        position: absolute;
-        background-color: #f9f9f9;
-        width: 100%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-} */
-
-
-/* Media query for responsive design */
-@media only screen and (max-width: 600px) {
-    /* Show the hamburger menu icon on smaller screens */
-    .hamburger-menu {
-        display: block;
-    }
-
-    /* Hide the side navigation by default on smaller screens */
-    .side-nav {
-        display: none;
-    }
-
-    /* Show the side navigation when the hamburger menu is clicked */
-    .side-nav.show {
-        display: block;
-    }
-}
 
 main {
-    /* margin-left: 250px; */
-    padding: 20px;
-}
-
-footer {
-    /* margin-left: 250px; */
-    padding: 20px;
+    padding: 10px;
 }
 
 body {
     font-family: Verdana, sans-serif;
-    margin: 0; /* from chatgpt */
 }
 
 /* Container styles */
@@ -276,4 +154,51 @@ img {
     height: auto; /* Ensures proportional scaling */
     display: block; /* Removes extra space below inline images */
     /*margin: 0 auto; /* Centers the image */
+}
+
+@media only screen and (min-width: 992px) {
+    nav {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 67, 139);
+        /* padding-top: 20px; */
+    }
+
+    nav a.icon{
+        display: none;
+    }
+
+    .myLinks {
+        display: block;
+    }
+    
+    nav a {
+        margin-left: 0px;
+        display: block;
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: background-color 0.3s;
+    }
+    
+
+
+    header {
+        margin-left: 250px;
+        /* padding: 20px; */
+    }
+
+    main {
+        margin-left: 250px;
+        padding: 20px;
+    }
+    
+    footer {
+        margin-left: 250px;
+        padding: 20px;
+    }
 }
