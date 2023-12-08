@@ -1,0 +1,279 @@
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(0, 67, 139);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+#back-to-top:hover {
+    opacity: 0.8;
+}
+
+header {
+    /* margin-left: 250px; */
+    padding: 20px;
+}
+
+/* .myLinks {
+    display: none;
+} */
+
+/* Add styles for the container */
+.container {
+    display: flex;
+}
+
+/* Style for side navigation */
+.side-nav {
+    width: 250px; /* Adjust the width as needed */
+    background-color: rgb(0, 67, 139);
+    color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%; /* Full height */
+    overflow-x: hidden;
+}
+
+/*nav { /* from chatgpt */
+    /* display: flex; */
+    /* flex-direction: column; Make the navigation links stack vertically by default */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* background-color: rgb(0, 67, 139); */
+/* } */
+
+/* Style for navigation links in side navigation */
+.side-nav a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.side-nav a:hover {
+    background-color: #555;
+}
+
+nav a {
+    display: none; /* Hide by default on larger screens */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Style for hamburger menu icon */
+.hamburger-menu {
+    display: none; /* Hide by default on larger screens */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* nav a:hover {
+    background-color: #555;
+}
+
+nav.responsive {
+    flex-direction: row; /* Switch to horizontal layout for larger screens */
+/* } */
+
+/* nav.responsive a { */
+    /* margin-right: 15px; Adjust spacing between horizontal navigation links */
+/* } */ 
+
+/* .mobile-container {
+    max-width: 480px;
+    margin: 0 auto;
+} */
+
+#myLinks {
+    display: none;
+} 
+
+nav a.icon {
+    background: rgb(0, 67, 139);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer; /* added this line */
+}
+
+.icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* @media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: row; /* Switch to horizontal layout for larger screens 
+    }
+
+    nav a {
+        margin-right: 15px; /* Adjust spacing between horizontal navigation links 
+    }
+
+    nav a:not(:first-child) {
+        display: none;
+    }
+
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+
+    nav.responsive a {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    nav.responsive {
+        position: relative;
+    }
+
+    nav.responsive #myLinks {
+        display: block;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+} */
+
+
+/* Media query for responsive design */
+@media only screen and (max-width: 600px) {
+    /* Show the hamburger menu icon on smaller screens */
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Hide the side navigation by default on smaller screens */
+    .side-nav {
+        display: none;
+    }
+
+    /* Show the side navigation when the hamburger menu is clicked */
+    .side-nav.show {
+        display: block;
+    }
+}
+
+main {
+    /* margin-left: 250px; */
+    padding: 20px;
+}
+
+footer {
+    /* margin-left: 250px; */
+    padding: 20px;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0; /* from chatgpt */
+}
+
+/* Container styles */
+.image-replica {
+    width: 300px; /* Adjust the width as needed */
+    height: 150px; /* Half the height of an Instagram post */
+    background-color: #ffffff; /* Background color */
+    /* border: 1px solid #ccc; /* Border for visual separation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Choose an appropriate font */
+    font-size: 20px; /* Adjust the font size as needed */
+    color: #333; /* Text color */
+}
+
+/* Define a class for the specific font */
+.monospace {
+    font-family: 'Courier New', monospace;
+}
+
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    th, td {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+.vc-bad-example {
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 5px 5px;
+    height: 50px;
+    width: 100px;
+    background-color: #022e58;
+    color: #03437F;
+}
+
+.vc-good-example{
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 5px 5px;
+    height: 50px;
+    width: 100px;
+    background-color: #03437F;
+    color: #FFF;
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Ensures proportional scaling */
+    display: block; /* Removes extra space below inline images */
+    /*margin: 0 auto; /* Centers the image */
+}
