@@ -11,6 +11,7 @@ The purpose of this page is to give a good example of accessible HTML and best p
 ## Recommendations
 
 Prerequisites: Accessibility Aspects Training
+
 Roles: Course Creators, Instructors, Project Managers
 
 
