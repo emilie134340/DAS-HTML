@@ -418,7 +418,7 @@
                         <p>The first rule of ARIA is to <strong>never use it!</strong> ARIA can be complex, especially when used to build custom widgets or interactive components. It's important to thoroughly understand how ARIA works and to carefully test and maintain ARIA-enhanced components. In some cases, it may be more practical to use accessible, pre-built libraries or frameworks that handle ARIA for you.</p>
                         <!--MAKE BETTTER; ASK SAMMIE WHAT ELSE TO INCLUDE (EXAMPLES, OTHER KEY POINTS, ETC>)-->
                 <h3>ARIA Example</h3>
-                    <p>HTML does not inherently provide a universally accessible element for text box labels. To address this, leveraging ARIA emerges as a valuable solution, enhancing the inclusivity of form interactions by ensuring all users receive clear guidance on the information to input into the form box.</p>
+                    <p>HTML does not inherently provide a universally accessible element for text box instructions. To address this, leveraging ARIA emerges as a valuable solution, enhancing the inclusivity of form interactions by ensuring all users receive clear guidance on the information to input into the form box. In the following example, a form is asking the user to create a password. The instructions underneath the form field will not be read to a screen reader user until after the form has been filled. We can use ARIA to address this issue.</p>
                     <h4>Input:</h4>
                         <div class="monospace">
                             &lt;label for="txtbox"&gt;Create a new password:&lt;/label&gt;<br>
@@ -427,8 +427,8 @@
                         </div>
                     <h4>Output:</h4>
                     <label for="txtbox">Create a new password:</label>
-                    <input type="text" aria-describedby="password-instructions" id="txtbox" />
-                    <p id="password-instructions">Password must be at least 8 characters long.</p>
+                    <input type="text" id="txtbox" placeholder="Password" aria-describedby="password-instructions" />
+                    <p id="password-instructions">Password must be at least 8 characters long.</p>                    
 
                 <h3>ARIA Roles and Attributes</h3>
                     <h4>ARIA Roles</h4>
